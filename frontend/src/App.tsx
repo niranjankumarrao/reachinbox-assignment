@@ -52,7 +52,7 @@ export default function App(){
   return (
     <div className="app">
       <header>
-        <h1>ReachInbox — Onebox (70%)</h1>
+        <h1>ReachInbox</h1>
         <div className="controls">
           <form onSubmit={search} style={{display:'flex', gap:8}}>
             <input placeholder="Search emails..." value={q} onChange={e=>setQ(e.target.value)} />
