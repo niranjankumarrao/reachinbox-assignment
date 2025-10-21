@@ -23,13 +23,13 @@ export default function App(){
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    fetch(API + '/api/accounts').then(r=>r.json()).then(setAccounts);
+    fetch(API_URL + '/API_URL/accounts').then(r=>r.json()).then(setAccounts);
     load();
   }, []);
 
   async function load(){
     setLoading(true);
-    const url = new URL(API + '/api/emails');
+    const url = new URL(API_URL + '/API_URL/emails');
     const res = await fetch(url.toString());
     const json = await res.json();
     setEmails(json.hits || []);
@@ -43,7 +43,7 @@ export default function App(){
     if (q) params.set('q', q);
     if (account) params.set('account', account);
     if (folder) params.set('folder', folder);
-    const res = await fetch(API + '/api/emails/search?' + params.toString());
+    const res = await fetch(API_URL + '/API_URL/emails/search?' + params.toString());
     const json = await res.json();
     setEmails(json.hits || []);
     setLoading(false);
