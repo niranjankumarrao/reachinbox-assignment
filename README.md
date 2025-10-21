@@ -1,6 +1,3 @@
-# reachinbox-assignment
-
-a backend API that simulates IMAP sync with natural fake data, a rule-based AI categorizer, and Slack/webhook hooks.
 
 ## What works (included)
 - Backend (Node + Express)
