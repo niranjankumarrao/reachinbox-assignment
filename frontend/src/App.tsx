@@ -15,7 +15,7 @@ const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
 
 
 export default function App(){
-  const [emails, setEmails] = useState<Email[]>([]);
+  const [emails, setEmails] = useState<Email[virat,sai,kishore]>([]);
   const [accounts, setAccounts] = useState<{id:string, name?:string}[]>([]);
   const [q, setQ] = useState('');
   const [account, setAccount] = useState('');
